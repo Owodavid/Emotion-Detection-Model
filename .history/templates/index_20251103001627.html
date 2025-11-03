@@ -157,16 +157,6 @@
             transition: transform 0.3s ease;
         }
 
-        .alert {
-            background: #ffeaa7;
-            color: #d63031;
-            padding: 15px;
-            border-radius: 12px;
-            margin: 20px 0;
-            text-align: center;
-            font-weight: 600;
-        }
-
         .result img:hover {
             transform: scale(1.03);
         }
@@ -209,20 +199,20 @@
                 {% if messages %}
                     <div class="alert">
                         {% for message in messages %}
-                            <p>{{ message }}</p>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-            {% endwith %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
 
-            {% if emotion %}
-                <div class="result">
-                    <div class="emotion">{{ emotion }}</div>
-                    {% if image_path %}
-                        <img src="{{ image_path }}" alt="Uploaded">
-                    {% endif %}
-                </div>
-            {% endif %}
+{% if emotion %}
+  <div class="result">
+    <div class="emotion">{{ emotion }}</div>
+    {% if image_path %}
+      <img src="{{ image_path }}" alt="Uploaded">
+    {% endif %}
+  </div>
+{% endif %}
         </div>
 
         <div class="footer">

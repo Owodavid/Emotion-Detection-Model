@@ -1,0 +1,6 @@
+tensorflow>=2.2.0
+opencv-python
+flask
+numpy
+pandas
+matplotlib

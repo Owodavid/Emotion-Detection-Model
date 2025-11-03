@@ -1,0 +1,28 @@
+# Virtual Environment
+CSC415_venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE/Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Database & Model (large files)
+database.db
+face_emotionModel.h5
+data/
+
+# Uploaded images
+static/
